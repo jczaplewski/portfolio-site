@@ -1,44 +1,46 @@
-/* ---------- GLOBAL ---------- */
+/* ---------- GLOBAL REBOOT ---------- */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 body {
-  background-color: #0b0b0b; /* deep black */
+  background: linear-gradient(180deg, #080808 0%, #0f1116 100%);
   color: #e6e6e6;
-  line-height: 1.6;
+  line-height: 1.7;
   -webkit-font-smoothing: antialiased;
 }
 
 a {
-  color: #3b6cff; /* medium blue */
+  color: #4d79ff;
   text-decoration: none;
-  transition: 0.2s;
+  transition: 0.25s ease;
 }
 
 a:hover {
-  color: #6d90ff; /* soft blue highlight */
-  text-shadow: 0 0 6px rgba(59,108,255,0.5);
+  color: #7fa1ff;
+  text-shadow: 0 0 8px rgba(100,130,255,0.5);
 }
 
-/* ---------- NAV ---------- */
+
+
+/* ---------- NAV (GLASS STYLE) ---------- */
 nav {
   width: 100%;
   padding: 20px 0;
-  background: rgba(26, 26, 26, 0.8); /* charcoal */
-  backdrop-filter: blur(12px);
+  background: rgba(20, 20, 20, 0.65);
+  backdrop-filter: blur(18px);
   position: sticky;
   top: 0;
-  z-index: 100;
-  border-bottom: 1px solid rgba(59, 108, 255, 0.15); /* subtle blue line */
+  z-index: 99;
+  border-bottom: 1px solid rgba(100,130,255,0.18);
 }
 
 .nav-container {
-  width: 90%;
-  max-width: 1100px;
+  width: 88%;
+  max-width: 1200px;
   margin: auto;
   display: flex;
   justify-content: space-between;
@@ -48,14 +50,14 @@ nav {
 nav ul {
   list-style: none;
   display: flex;
-  gap: 32px;
+  gap: 36px;
 }
 
 nav ul li a {
-  font-size: 1rem;
-  letter-spacing: 0.6px;
   position: relative;
   padding-bottom: 4px;
+  font-size: 1.05rem;
+  letter-spacing: 0.4px;
 }
 
 nav ul li a::after {
@@ -65,7 +67,7 @@ nav ul li a::after {
   bottom: -3px;
   width: 0%;
   height: 2px;
-  background: #3b6cff;
+  background: #4d79ff;
   transition: width 0.25s ease;
 }
 
@@ -73,90 +75,117 @@ nav ul li a:hover::after {
   width: 100%;
 }
 
-/* ---------- MAIN LAYOUT ---------- */
+
+
+/* ---------- GLOBAL CONTAINER ---------- */
 .container {
-  width: 90%;
-  max-width: 1100px;
-  margin: 70px auto;
+  width: 88%;
+  max-width: 1200px;
+  margin: 80px auto;
 }
 
-/* ---------- HERO SECTION ---------- */
+
+
+/* ---------- HERO (NOW VISUALLY DIFFERENT) ---------- */
 .hero {
-  padding: 140px 0;
+  padding: 150px 0;
   text-align: center;
 }
 
 .hero h1 {
-  font-size: 3.3rem;
+  font-size: 3.8rem;
   font-weight: 800;
-  color: #f2f2f2;
-  letter-spacing: -1px;
+  color: #ffffff;
+  letter-spacing: -1.5px;
+  margin-bottom: 20px;
 }
 
 .hero p {
-  margin-top: 22px;
-  font-size: 1.25rem;
-  color: #b1b1b1;
+  font-size: 1.3rem;
+  color: #b5b5b5;
   max-width: 700px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
 }
+
+
 
 /* ---------- SECTION HEADERS ---------- */
 h2.section-title {
-  font-size: 2rem;
-  margin-bottom: 20px;
-  border-left: 5px solid #3b6cff;
-  padding-left: 14px;
-  letter-spacing: 0.5px;
+  font-size: 2.4rem;
+  display: inline-block;
+  border-left: 5px solid #4d79ff;
+  padding-left: 16px;
+  margin-bottom: 35px;
+  color: #ffffff;
+  letter-spacing: 0.3px;
 }
 
-/* ---------- CARDS (if used) ---------- */
-.card {
-  background: #1a1a1a; /* charcoal */
-  border: 1px solid rgba(59, 108, 255, 0.18);
-  padding: 25px;
-  border-radius: 14px;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+
+
+/* ---------- MODERN PROJECT CARDS ---------- */
+.project-card {
+  background: #13151b;
+  border: 1px solid rgba(100,130,255,0.25);
+  padding: 30px;
+  border-radius: 18px;
+  margin: 25px 0;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.45);
+  transition: transform 0.3s ease, border-color 0.25s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(100,130,255,0.5);
+}
+
+
+
+/* ---------- BUTTONS ---------- */
+.btn {
+  background: #4d79ff;
+  color: white;
+  padding: 12px 22px;
+  border-radius: 10px;
+  display: inline-block;
+  margin-top: 15px;
+  font-weight: 600;
   transition: 0.25s ease;
 }
 
-.card:hover {
-  transform: translateY(-6px);
-  border-color: rgba(59,108,255,0.4);
-  box-shadow: 0 10px 28px rgba(0,0,0,0.45);
+.btn:hover {
+  background: #345dff;
+  box-shadow: 0 0 15px rgba(77,121,255,0.4);
 }
+
+
 
 /* ---------- FOOTER ---------- */
 footer {
   margin-top: 120px;
-  padding: 35px 0;
+  padding: 40px 0;
   text-align: center;
-  background: #111;
-  color: #888;
+  background: #0a0c10;
+  color: #9a9a9a;
   font-size: 0.95rem;
-  border-top: 1px solid rgba(59,108,255,0.18);
+  border-top: 1px solid rgba(100,130,255,0.18);
 }
+
+
 
 /* ---------- COOKIE POPUP ---------- */
 .cookie-popup {
   position: fixed;
   bottom: 25px;
   right: 25px;
-  background: #1a1a1a;
-  border: 1px solid rgba(59,108,255,0.18);
+  background: #1a1d24;
+  border: 1px solid rgba(100,130,255,0.2);
   padding: 22px 26px;
-  border-radius: 12px;
+  border-radius: 14px;
   max-width: 320px;
   color: #e6e6e6;
   display: none;
   z-index: 9999;
-  box-shadow: 0 8px 25px rgba(0,0,0,0.5);
-}
-
-.cookie-popup a {
-  color: #3b6cff;
-  text-decoration: underline;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.6);
 }
 
 .cookie-popup button {
@@ -164,13 +193,13 @@ footer {
   padding: 10px 18px;
   border: none;
   border-radius: 8px;
-  background: #3b6cff;
+  background: #4d79ff;
   color: white;
   font-weight: 600;
   cursor: pointer;
-  transition: 0.2s;
+  transition: 0.25s;
 }
 
 .cookie-popup button:hover {
-  background: #1f3daa; /* deeper blue */
+  background: #345dff;
 }
