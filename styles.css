@@ -92,3 +92,43 @@ footer {
   background: rgba(255,255,255,0.03);
   color: #999;
 }
+
+/* ---------- COOKIE POPUP ---------- */
+.cookie-popup {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 20px 24px;
+  border-radius: 12px;
+  max-width: 320px;
+  font-size: 0.95rem;
+  line-height: 1.4;
+  color: #e6e6e6;
+  display: none;
+  z-index: 9999;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+}
+
+.cookie-popup a {
+  color: #7ab4ff;
+  text-decoration: underline;
+}
+
+.cookie-popup button {
+  margin-top: 15px;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 8px;
+  background: #7ab4ff;
+  color: black;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.cookie-popup button:hover {
+  opacity: 0.85;
+}

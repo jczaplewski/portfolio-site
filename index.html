@@ -36,8 +36,34 @@
   </div>
 
   <footer>
-    © 2025 Jack Czaplewski
+    © 2025 Jack Czaplewski |
+    <a href="cookie-policy.html">Cookie Policy</a> |
+    <a href="privacy-policy.html">Privacy Policy</a> |
+    <a href="terms-and-conditions.html">Terms & Conditions</a>
   </footer>
+
+  <!-- COOKIE POPUP -->
+  <div id="cookie-popup" class="cookie-popup">
+    <p>
+      This website uses cookies to ensure you get the best experience. 
+      Read our <a href="cookie-policy.html">Cookie Policy</a>.
+    </p>
+    <button id="acceptCookies">Accept</button>
+  </div>
+
+  <!-- COOKIE POPUP SCRIPT -->
+  <script>
+    // Show popup only if the user has not accepted cookies yet
+    if (!localStorage.getItem("cookiesAccepted")) {
+      document.getElementById("cookie-popup").style.display = "block";
+    }
+
+    // Accept button clears popup + saves preference
+    document.getElementById("acceptCookies").addEventListener("click", function () {
+      localStorage.setItem("cookiesAccepted", "true");
+      document.getElementById("cookie-popup").style.display = "none";
+    });
+  </script>
 
 </body>
 </html>
