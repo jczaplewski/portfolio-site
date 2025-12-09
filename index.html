@@ -2,46 +2,42 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-GFPXYLP7X4"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'G-GFPXYLP7X4');
-</script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-GFPXYLP7X4"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-GFPXYLP7X4');
+  </script>
+
   <title>Jack Czaplewski — Portfolio</title>
   <link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
-  
-  <!-- Open Graph / Facebook -->
-<meta property="og:title" content="Jack Czaplewski — Portfolio">
-<meta property="og:description" content="Data analytics student showcasing projects, skills, and experience.">
-<meta property="og:image" content="https://jackczaplewski.com/headshot.jpg">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="Jack Czaplewski — portfolio preview image">
-<meta property="og:url" content="https://jackczaplewski.com/">
-<meta property="og:type" content="website">
 
-<!-- Twitter -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Jack Czaplewski — Portfolio">
-<meta name="twitter:description" content="Data analytics student showcasing projects, skills, and experience.">
-<meta name="twitter:image" content="https://jackczaplewski.com/headshot.jpg">
+  <!-- Open Graph -->
+  <meta property="og:title" content="Jack Czaplewski — Portfolio">
+  <meta property="og:description" content="Data analytics student showcasing projects, skills, and experience.">
+  <meta property="og:image" content="https://jackczaplewski.com/headshot.jpg">
+  <meta property="og:url" content="https://jackczaplewski.com/">
+  <meta property="og:type" content="website">
 
-<!-- Optional: LinkedIn likes Open Graph, so OG tags above are sufficient -->
-
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Jack Czaplewski — Portfolio">
+  <meta name="twitter:description" content="Data analytics student showcasing projects, skills, and experience.">
+  <meta name="twitter:image" content="https://jackczaplewski.com/headshot.jpg">
 </head>
+
 <body>
-  
+
   <!-- NAVBAR -->
   <nav>
     <div class="nav-container">
       <h3>Jack Czaplewski Portfolio</h3>
       <ul>
-        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html" class="active">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="projects.html">Projects</a></li>
         <li><a href="contact.html">Contact</a></li>
@@ -52,16 +48,17 @@
   <!-- HERO -->
   <div class="container hero">
     <h1>Welcome to My Portfolio</h1>
-    <p>Body text</p>
+    <p></p>
   </div>
-  <!--Lean more Button -->
+
+  <!-- LEARN MORE BUTTON -->
   <a 
-  href="https://jackczaplewski.com?utm_source=portfolio&utm_medium=button&utm_campaign=finalproject" 
-  class="cta-button">
-  Learn More
-</a>
+    href="https://jackczaplewski.com?utm_source=portfolio&utm_medium=button&utm_campaign=finalproject"
+    class="cta-button">
+    Learn More
+  </a>
 
-
+  <!-- FOOTER -->
   <footer>
     © 2025 Jack Czaplewski |
     <a href="cookie-policy.html">Cookie Policy</a> |
@@ -72,20 +69,18 @@
   <!-- COOKIE POPUP -->
   <div id="cookie-popup" class="cookie-popup">
     <p>
-      This website uses cookies to ensure you get the best experience. 
+      This website uses cookies to ensure you get the best experience.
       Read our <a href="cookie-policy.html">Cookie Policy</a>.
     </p>
     <button id="acceptCookies">Accept</button>
   </div>
 
-  <!-- COOKIE POPUP SCRIPT -->
+  <!-- COOKIE SCRIPT -->
   <script>
-    // Show popup only if the user has not accepted cookies yet
     if (!localStorage.getItem("cookiesAccepted")) {
       document.getElementById("cookie-popup").style.display = "block";
     }
 
-    // Accept button clears popup + saves preference
     document.getElementById("acceptCookies").addEventListener("click", function () {
       localStorage.setItem("cookiesAccepted", "true");
       document.getElementById("cookie-popup").style.display = "none";

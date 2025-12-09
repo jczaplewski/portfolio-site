@@ -2,19 +2,20 @@
 <html lang="en">
 <head>
     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-GFPXYLP7X4"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GFPXYLP7X4"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-GFPXYLP7X4');
+    </script>
 
-  gtag('config', 'G-GFPXYLP7X4');
-</script>
-  <meta charset="UTF-8">
-  <title>Projects — Jack Czaplewski</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <meta charset="UTF-8">
+    <title>Projects — Jack Czaplewski</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
+
 <body>
 
   <nav>
@@ -23,7 +24,7 @@
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
-        <li><a href="projects.html">Projects</a></li>
+        <li><a href="projects.html" class="active">Projects</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </div>
@@ -31,14 +32,41 @@
 
   <div class="container">
     <h2 class="section-title">Projects</h2>
-    <p>[My project cards will go here later]</p>
+
+    <!-- PROJECT CARD -->
+    <div class="project-card">
+      <h3>Casey’s Coffee Rebrand Analysis</h3>
+      <p>
+        For this project, I analyzed the impact of Casey’s month-long free coffee promotion 
+        following their brand refresh. Using store-level data from Iowa (Iowa City area) 
+        and Tennessee (Nashville area), our team evaluated how customer behavior changed 
+        during and after the promotion.
+      </p>
+
+      <ul>
+        <li>Compared coffee purchase volume before, during, and after the free month</li>
+        <li>Evaluated regional differences between Iowa and Tennessee stores</li>
+        <li>Identified whether the rebrand increased repeat coffee customers</li>
+        <li>Highlighted trends in customer adoption and store-level engagement</li>
+      </ul>
+
+      <p>
+        Overall, our analysis showed that the free-month strategy successfully increased 
+        trial usage in both regions, with Iowa City showing the strongest conversion into 
+        repeat purchases.
+      </p>
+
+      <!-- Placeholder link — can replace with PDF or GitHub later -->
+      <a class="project-link" href="#" onclick="alert('Project file coming soon!')">View Project</a>
+    </div>
+
   </div>
 
   <footer>
-  © 2025 Jack Czaplewski |
-  <a href="cookie-policy.html">Cookie Policy</a> |
-  <a href="privacy-policy.html">Privacy Policy</a> |
-  <a href="terms-and-conditions.html">Terms & Conditions</a>
+    © 2025 Jack Czaplewski |
+    <a href="cookie-policy.html">Cookie Policy</a> |
+    <a href="privacy-policy.html">Privacy Policy</a> |
+    <a href="terms-and-conditions.html">Terms & Conditions</a>
   </footer>
 
 </body>
