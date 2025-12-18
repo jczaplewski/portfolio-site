@@ -21,20 +21,15 @@ Open the project folder.
 
 Double-click index.html to view the website in a web browser.
 
-Key Features
-Responsive layout for desktop and mobile devices
+## Key Features
+- Responsive layout for desktop and mobile devices
+- Clear navigation between pages
+- Structured HTML5 and CSS3 styling 🎨
+- Accessible and user-friendly design
 
-Clear navigation between pages
-
-Structured HTML5 and CSS3 styling 🎨
-
-Accessible and user-friendly design
-
-Technologies Used
-HTML5
-
-CSS3
-
-GitHub Pages
+## Technologies Used
+- HTML5
+- CSS3
+- GitHub Pages
 
 🚀 This website was developed as part of a university project to demonstrate front-end development and web design principles.
