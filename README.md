@@ -5,13 +5,13 @@ This project is a personal portfolio website created to showcase my academic bac
 
 ## Project Structure
 portfolio-website/
-├── index.html
-├── about.html
-├── projects.html
-├── css/
-│   └── styles.css
-├── images/
-└── README.md
+- index.html
+- about.html
+- projects.html
+- css/
+ - styles.css
+- images/
+- README.md
 
 
 ## How to Run
