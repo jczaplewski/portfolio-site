@@ -9,7 +9,7 @@ portfolio-website/
 - about.html
 - projects.html
 - css/
- - styles.css
+  - styles.css
 - images/
 - README.md
 
